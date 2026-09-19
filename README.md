@@ -1,115 +1,30 @@
-# E-commerce Recommendation System (MongoDB + API Architecture)
+# E-commerce Recommendation System
 
-A web application that displays user profiles and product listings, with the ability to track user purchases and serve as a foundation for future machine learning recommendations using TensorFlow.js. 
+Historical precursor to [NeuroCart](https://github.com/bielfelix/NeuroCart).
 
-The system has been evolved into a more robust and production-oriented architecture, now powered by a backend API and MongoDB for scalable data management.
+This repository captures an earlier stage of the recommendation-system experiment, focused on separating the frontend from a Node.js API and moving data from static JSON files to MongoDB.
 
+The newer NeuroCart repository contains the more complete version of this work, including the TensorFlow.js recommendation flow and updated documentation.
 
-## Demo
+## What this version demonstrates
 
-![Demo](demo.png)
+- Node.js and Express API
+- MongoDB persistence
+- User and product endpoints
+- Seed workflow
+- Separation between frontend, services and backend API
 
-## Overview
+## Status
 
-Originally built using static JSON files, this project has been upgraded to a professional architecture that includes:
+This repository is kept as historical evidence of the project's evolution.
 
-- A Node.js + Express API layer
-- MongoDB as the primary data source
-- Clear separation between frontend and backend
+For the current version, use:
 
-This evolution improves scalability, maintainability, and aligns the application with real-world development standards.
+https://github.com/bielfelix/NeuroCart
 
-## Architecture
+## Attribution
 
-- **Frontend**: Static files (HTML, JS) served via Express
-- **Backend API**: Node.js with Express
-- **Database**: MongoDB (`ecommerce-aula`)
-- **Collections**: `users` and `products`
+The recommendation-system exercise originated from course material from the Software Engineering with Applied AI program published by UNIPDS and Erick Wendel.
 
-## Project Structure
-
-- `index.html` → Frontend entry point  
-- `src/api/` → Backend API (Express + MongoDB)  
-- `src/service/` → Services consuming API endpoints  
-- `src/workers/` → Background processing (ML training)  
-- `sql/` → Initial data for MongoDB  
-- `data/` → Legacy JSON files (deprecated)
-
-## MongoDB Setup
-
-### 1. Create Database
-
-```
-ecommerce-aula
-```
-
-### 2. Create Collections
-
-```
-users
-products
-```
-
-### 3. Import Initial Data
-
-Data is available inside `/sql`.
-
-#### MongoDB Compass
-1. Connect to MongoDB
-2. Create database `ecommerce-aula`
-3. Create collections
-4. Import JSON files
-
-
-## Environment Configuration
-
-Configure `.env`:
-
-```
-MONGODB_URI=mongodb://192.168.0.128:27017
-MONGODB_DB_NAME=ecommerce-aula
-PORT=3000
-```
-
-## Installation
-
-```
-npm install
-```
-
-## Seed (optional)
-
-```
-npm run seed
-```
-
-## Run
-
-```
-npm start
-```
-
-Access:
-
-```
-http://localhost:3000
-```
-
-## API Endpoints
-
-- GET `/api/health`
-- GET `/api/users`
-- GET `/api/products`
-
-## Key Improvements
-
-- Migration from static JSON to MongoDB
-- Introduction of REST API layer
-- Better scalability and maintainability
-- Real-world architecture ready for ML integration
-
-## Future Enhancements
-
-- TensorFlow.js recommendation engine
-- Behavioral analysis
-- Personalized recommendations
+Upstream material:
+https://github.com/unipds-engenharia-de-ia-aplicada/engenharia-de-software-com-ia-aplicada
