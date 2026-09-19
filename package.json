@@ -15,11 +15,12 @@
     "recommendation",
     "javascript"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "UNIPDS / Erick Wendel course base; study repository maintained by Gabriel Felix",
+  "license": "UNLICENSED",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "mongodb": "^6.16.0"
-  }
+  },
+  "private": true
 }
