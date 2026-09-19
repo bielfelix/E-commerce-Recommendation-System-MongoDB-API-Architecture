@@ -24,7 +24,7 @@ https://github.com/bielfelix/NeuroCart
 
 ## Attribution
 
-The recommendation-system exercise originated from course material from the Software Engineering with Applied AI program published by UNIPDS and Erick Wendel.
+The recommendation-system exercise originated from source material from the Software Engineering with Applied AI program published by UNIPDS and Erick Wendel.
 
 Upstream material:
 https://github.com/unipds-engenharia-de-ia-aplicada/engenharia-de-software-com-ia-aplicada
